@@ -8,7 +8,7 @@ import {
 } from '@angular/forms';
 
 import { forbiddenWorkingExperience } from '../shared/forbidden-working-experience.directive';
-import { MessagesComponent, Type } from '../message/message.component';
+import { MessagesComponent } from '../message/message.component';
 
 @Component({
   standalone: true,

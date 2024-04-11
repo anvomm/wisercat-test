@@ -20,7 +20,7 @@ export class MessagesComponent implements OnChanges {
   textColor = '';
 
   @Input() text!: string;
-  @Input() type!: string;
+  @Input() type: 'info' | 'success' | 'error' = "info";
 
   @HostBinding('attr.style')
   public get cssVars() {
@@ -53,10 +53,4 @@ export class MessagesComponent implements OnChanges {
         break;
     }
   }
-}
-
-export enum Type {
-  error,
-  success,
-  info,
 }
